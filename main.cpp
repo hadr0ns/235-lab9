@@ -26,6 +26,66 @@ int main(int argc, char* argv[])
 	std::string temp; // used to store the current instruction
 	Hashmap* map = NULL; // the hashmap
 
+	/*testing area
+	Hashmap* newMap = new Hashmap();
+
+	newMap->insert("Ayckbourn", 1);
+	newMap->insert("Ayckbourns", 1);
+	newMap->insert("aye", 1);
+	newMap->insert("Ayers", 1);
+	newMap->insert("ayes", 1);
+	newMap->insert("ayes", 1);
+	newMap->insert("Aylesbury", 1);
+	newMap->insert("Aylesburys", 1);
+	newMap->insert("Ayr", 1);
+	newMap->insert("Ayrs", 1);
+	newMap->insert("Ayrshire", 1);
+	newMap->insert("Ayrshires", 1);
+	newMap->insert("azalea", 1);
+	newMap->insert("azaleas", 1);
+	newMap->insert("azaleas", 1);
+	newMap->insert("Azerbaijan", 1);
+	newMap->insert("Azerbaijans", 1);
+	newMap->insert("Azeri", 1);
+	newMap->insert("Azeris", 1);
+	newMap->insert("Azikiwe", 1);
+	newMap->insert("Azikiwes", 1);
+	newMap->insert("azimuth", 1);
+	newMap->insert("azimuthal", 1);
+	newMap->insert("azimuthally", 1);
+	newMap->insert("azimuths", 1);
+	newMap->insert("azimuths", 1);
+	newMap->insert("Aziz", 1);
+	newMap->insert("Azizs", 1);
+	newMap->insert("Azores", 1);
+	newMap->insert("Azov", 1);
+	newMap->insert("Aztec", 1);
+	newMap->insert("Aztecan", 1);
+	newMap->insert("Aztecs", 1);
+	newMap->insert("azure", 1);
+	newMap->insert("azures", 1);
+	cout << "1size: " << newMap->size() << endl;
+	cout << newMap->toString() << endl;
+	newMap->remove("Aziz");
+	cout << "2size: " << newMap->size() << endl;
+	newMap->remove("Ayr");
+	cout << "3size: " << newMap->size() << endl;
+	newMap->remove("Azeri");
+	cout << "4size: " << newMap->size() << endl;
+	cout << newMap->toString() << endl;
+	exit(0);
+	//*/
+	/*
+	size
+	remove Aziz
+	size
+	remove Ayr
+	size
+	remove Azeri
+	*/
+
+
+
 	for (int i = 0; i < NUM_FILES; i++) {
 		map = new Hashmap(); // the hashmap
 		ifs.open(fileArray[i]); // open the file to read from

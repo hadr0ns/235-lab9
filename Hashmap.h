@@ -65,6 +65,7 @@ private:
 	 *  Try to make your hash function so that the distribution is uniform over all buckets
 	 */
 	unsigned int hash(string key) const;
+	Node* find(string key);
 public:
 	Hashmap();
 	~Hashmap();
